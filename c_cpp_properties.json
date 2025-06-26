@@ -1,0 +1,33 @@
+{
+    "configurations": [
+        {
+            "name": "windows-gcc-x64",
+            "includePath": [
+                "${workspaceFolder}/**",
+                "C:/msys64/mingw64/include/gtk-3.0",
+                "C:/msys64/mingw64/include/pango-1.0",
+                "C:/msys64/mingw64/include/harfbuzz",
+                "C:/msys64/mingw64/include/cairo",
+                "C:/msys64/mingw64/include/freetype2",
+                "C:/msys64/mingw64/include/pixman-1",
+                "C:/msys64/mingw64/include/gdk-pixbuf-2.0",
+                "C:/msys64/mingw64/include/libpng16",
+                "C:/msys64/mingw64/include/webp",
+                "C:/msys64/mingw64/include/atk-1.0",
+                "C:/msys64/mingw64/include/fribidi",
+                "C:/msys64/mingw64/include/glib-2.0",
+                "C:/msys64/mingw64/lib/glib-2.0/include"
+                // You might also need to explicitly add standard library paths
+                // E.g., "C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/<version>/include"
+                // Replace <version> with your actual GCC version (e.g., 15.1.0)
+                // You can find the exact path by running `gcc -print-search-dirs` in your MSYS2 terminal
+            ],
+            "defines": [],
+            "compilerPath": "C:/msys64/mingw64/bin/gcc.exe", // Specify the full path to your GCC
+            "cStandard": "${default}",
+            "cppStandard": "${default}",
+            "intelliSenseMode": "windows-gcc-x64"
+        }
+    ],
+    "version": 4
+}
