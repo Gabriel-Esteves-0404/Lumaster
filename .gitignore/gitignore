@@ -1,0 +1,24 @@
+# Executáveis e binários
+*.exe
+*.out
+*.bin
+*.dat
+
+# Arquivos de exportação
+*.csv
+
+# Diretórios gerados
+bin/
+data/
+
+# Configurações locais do VS Code
+.vscode/
+
+# Arquivos temporários de editores
+*~
+*.swp
+*.swo
+
+# Arquivos de sistema
+.DS_Store
+Thumbs.db
