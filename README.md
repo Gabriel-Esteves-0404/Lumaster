@@ -94,9 +94,9 @@ Todos os arquivos importantes estão na pasta `data/`:
 | `Planilha_de_Embarque-Teste.csv` | Planilha exemplo de embarque |
 | `Seguro_Viagem-Teste.csv`        | Planilha exemplo de seguro   |
 
-## 🖥️ Interface Gráfica (GTK 4)
+## 🖥️ Interface Gráfica (GTK 3)
 
-O sistema utiliza GTK 4 para oferecer uma interface intuitiva e organizada, permitindo fácil acesso e uso das funcionalidades:
+O sistema utiliza GTK 3 para oferecer uma interface intuitiva e organizada, permitindo fácil acesso e uso das funcionalidades:
 
 * Telas bem distribuídas e organizadas
 * Interface responsiva e visualmente clara
