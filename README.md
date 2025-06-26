@@ -107,3 +107,12 @@ O sistema utiliza GTK 3 para oferecer uma interface intuitiva e organizada, perm
 ## ⚖️ Licença
 
 Este projeto está sob licença [MIT](LICENSE), permitindo o uso, modificação e distribuição livre do sistema.
+
+
+Integrantes:
+- Gabriel Esteves
+- Kayque Moreira
+- Anne Beatriz
+- Maria Clara Sousa
+- Arthur Levy
+- Arthur Pessoa Lira
