@@ -1,6 +1,6 @@
 # Lumastur - Sistema de Gerenciamento de Viagens Escolares
 
-O **Lumastur** é um sistema completo desenvolvido em **C com GTK 4**, voltado para o gerenciamento eficaz de viagens escolares, envolvendo controle de usuários, alunos, turmas, pagamentos e exportações para planilhas.
+O **Lumastur** é um sistema completo desenvolvido em **C com GTK 3**, voltado para o gerenciamento eficaz de viagens escolares, envolvendo controle de usuários, alunos, turmas, pagamentos e exportações para planilhas.
 
 ## 🧠 Principais Funcionalidades
 
