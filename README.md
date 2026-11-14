@@ -33,13 +33,9 @@ O **Lumaster** é um sistema completo desenvolvido em **C com GTK 3**, voltado p
 ## 🗃️ Estrutura do Repositório
 
 ```plaintext
-Lumastur/
+lumaster/
 ├── src/          # Código-fonte (.c, .h)
-├── data/         # Arquivos de dados e planilhas (.bin, .dat, .csv)
-├── bin/          # Executável compilado (lumaster.exe)
-├── .vscode/      # Configuração do VS Code
-├── docs/         # Documentação adicional (imagens, manuais)
-├── .gitignore    # Arquivo de exclusão do Git
+├── .gitignore    # Arquivos ignorados pelo Git
 ├── LICENSE       # Licença MIT
 └── README.md     # Documentação principal do projeto
 ```
@@ -63,36 +59,38 @@ Lumastur/
 
 ## 🚀 Como Rodar o Sistema
 
-### Com o executável já compilado:
+### Pré-requisitos
 
-Basta abrir a pasta `bin` e executar:
+* Compilador GCC
+* GTK 3 (pacote de desenvolvimento) e `pkg-config`
+  * Debian/Ubuntu: `sudo apt install build-essential libgtk-3-dev pkg-config`
+  * Windows: MSYS2 (`pacman -S mingw-w64-x86_64-gtk3 mingw-w64-x86_64-gcc pkg-config`)
 
-```plaintext
-lumaster.exe
-```
-
-### Compilação usando Makefile:
-
-Se desejar recompilar o projeto (necessário ter GCC e GTK4 instalados):
+### Compilação
 
 ```bash
-make
-./bin/lumaster.exe
+mkdir -p bin
+gcc src/*.c -o bin/lumaster $(pkg-config --cflags --libs gtk+-3.0)
+```
+
+### Execução
+
+Execute a partir de uma pasta onde o programa possa gravar arquivos, pois ele salva os dados no diretório atual:
+
+```bash
+./bin/lumaster
 ```
 
 ## 📂 Sobre os Dados
 
-Todos os arquivos importantes estão na pasta `data/`:
+O repositório não inclui dados. Na primeira execução o sistema cria, no diretório de execução, os arquivos abaixo conforme você cadastra informações:
 
-| Arquivo                          | Descrição                    |
-| -------------------------------- | ---------------------------- |
-| `usuarios.dat`                   | Dados binários dos usuários  |
-| `usuarios.csv`                   | Exportação de usuários       |
-| `alunos_data.bin`                | Dados binários dos alunos    |
-| `viagens_data.bin`               | Dados binários das viagens   |
-| `Custos_Teste.csv`               | Planilha exemplo de custos   |
-| `Planilha_de_Embarque-Teste.csv` | Planilha exemplo de embarque |
-| `Seguro_Viagem-Teste.csv`        | Planilha exemplo de seguro   |
+| Arquivo             | Descrição                                   |
+| ------------------- | ------------------------------------------- |
+| `usuarios.dat`      | Dados binários dos usuários                 |
+| `alunos_data.bin`   | Dados binários dos alunos                   |
+| `viagens_data.bin`  | Dados binários das viagens                  |
+| `*.csv`             | Exportações (usuários, embarque, seguro, custos) |
 
 ## 🖥️ Interface Gráfica (GTK 3)
 
@@ -101,8 +99,6 @@ O sistema utiliza GTK 3 para oferecer uma interface intuitiva e organizada, perm
 * Telas bem distribuídas e organizadas
 * Interface responsiva e visualmente clara
 * Uso dinâmico de cores e avisos para facilitar a interação
-
-*(Recomenda-se adicionar prints de telas na pasta `docs/` e incluir aqui para demonstração.)*
 
 ## ⚖️ Licença
 
